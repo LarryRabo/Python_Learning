@@ -1,7 +1,8 @@
-class GenCode:
-    def __init__(self):
-        self.name = name
+import random
 
+class GenCode:
+    def __init__(self,name):
+        self.name = name
 
     def getRandom1(string_code):
         return "".join(random.sample(string_code, 4))
@@ -13,5 +14,5 @@ class GenCode:
 
 
     # 生成n组激活码
-    def generate1(str1, group, n):
-        return [concatenate1(str1, group) for i in range(n)]
+    def generate1(string_code, group, n):
+        return [concatenate1(string_code, group) for i in range(n)]
